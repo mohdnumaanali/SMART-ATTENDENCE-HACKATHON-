@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Attendance Tracker — SR University</title>
+  <meta name="description" content="Smart Attendance Tracker for managing courses, student enrollments, classroom attendance, and 75% eligibility reports." />
+  <meta property="og:title" content="Smart Attendance Tracker — SR University" />
+  <meta property="og:description" content="Role-based Smart Attendance Tracker for Admin, Faculty, and Students." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Solid Navy Top Navbar (hidden until signed in) -->
+  <header id="topbar" class="topbar is-hidden">
+    <div class="topbar-inner">
+      <div class="brand">Smart Attendance Tracker</div>
+      <nav id="topbar-nav" class="topbar-nav" aria-label="Main Navigation"></nav>
+      <div class="topbar-right">
+        <span id="topbar-user" class="topbar-user"></span>
+        <button type="button" id="btn-signout" class="btn btn-light btn-sm">Sign Out</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Module 1: Centered Login & Register -->
+    <section id="view-auth" class="auth-wrapper is-hidden" aria-label="Login and Registration">
+      <div class="card auth-card">
+        <h1 class="auth-title">Smart Attendance Tracker</h1>
+        <p class="auth-subtitle">SR University Portal</p>
+
+        <div class="tabs">
+          <button type="button" id="tab-login" class="tab-btn is-active">Login</button>
+          <button type="button" id="tab-register" class="tab-btn">Register</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="form-login" class="form-stack">
+          <div class="field">
+            <label for="login-role">Role</label>
+            <select id="login-role">
+              <option value="Student">Student</option>
+              <option value="Faculty">Faculty</option>
+              <option value="Admin">Admin</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="login-id">User ID or Email</label>
+            <input type="text" id="login-id" required placeholder="e.g. CS23001" />
+          </div>
+          <div class="field">
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" required placeholder="Enter password" />
+          </div>
+          <p id="login-error" class="error-text is-hidden"></p>
+          <button type="submit" id="btn-login" class="btn btn-primary btn-block">Login</button>
+        </form>
+
+        <!-- Register Form -->
+        <form id="form-register" class="form-stack is-hidden">
+          <div class="field">
+            <label for="reg-role">Role</label>
+            <select id="reg-role">
+              <option value="Student">Student</option>
+              <option value="Faculty">Faculty</option>
+              <option value="Admin">Admin</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="reg-id">User ID</label>
+            <input type="text" id="reg-id" required placeholder="e.g. CS23043" />
+          </div>
+          <div class="field">
+            <label for="reg-name">Full Name</label>
+            <input type="text" id="reg-name" required placeholder="Enter full name" />
+          </div>
+          <div class="field">
+            <label for="reg-email">Email</label>
+            <input type="email" id="reg-email" required placeholder="name@sru.edu.in" />
+          </div>
+          <div class="field">
+            <label for="reg-password">Password</label>
+            <input type="password" id="reg-password" required minlength="6" placeholder="Minimum 6 characters" />
+          </div>
+          <p id="register-error" class="error-text is-hidden"></p>
+          <button type="submit" id="btn-register" class="btn btn-primary btn-block">Register</button>
+        </form>
+
+        <div class="demo-box">
+          <span class="demo-label">Demo Fill (Password: Password@123):</span>
+          <div class="demo-buttons">
+            <button type="button" class="btn btn-outline btn-sm" data-fill-role="Admin" data-fill-id="ADMIN001">Admin</button>
+            <button type="button" class="btn btn-outline btn-sm" data-fill-role="Faculty" data-fill-id="FAC001">Faculty</button>
+            <button type="button" class="btn btn-outline btn-sm" data-fill-role="Student" data-fill-id="CS23001">Student</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 2: Admin Course & Enrollment Management -->
+    <section id="view-admin" class="is-hidden" aria-label="Course and Enrollment Management">
+      <h1 class="page-heading">Course &amp; Enrollment Management</h1>
+
+      <div class="admin-grid">
+        <!-- (a) Add User -->
+        <div class="card">
+          <h2 class="card-title">1. Add User</h2>
+          <form id="form-add-user" class="form-stack">
+            <div class="field">
+              <label for="adm-user-role">Role</label>
+              <select id="adm-user-role">
+                <option value="Student">Student</option>
+                <option value="Faculty">Faculty</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="adm-user-id">User ID</label>
+              <input type="text" id="adm-user-id" required placeholder="e.g. CS23043 or FAC003" />
+            </div>
+            <div class="field">
+              <label for="adm-user-name">Full Name</label>
+              <input type="text" id="adm-user-name" required placeholder="Full Name" />
+            </div>
+            <div class="field">
+              <label for="adm-user-email">Email</label>
+              <input type="email" id="adm-user-email" required placeholder="user@sru.edu.in" />
+            </div>
+            <div class="field">
+              <label for="adm-user-pw">Password</label>
+              <input type="password" id="adm-user-pw" required minlength="6" value="Password@123" />
+            </div>
+            <button type="submit" class="btn btn-primary">Add User</button>
+          </form>
+        </div>
+
+        <!-- (b) Create Course & Assign Faculty -->
+        <div class="card">
+          <h2 class="card-title">2. Create Course &amp; Assign Faculty</h2>
+          <form id="form-add-course" class="form-stack">
+            <div class="field">
+              <label for="adm-course-id">Course Code</label>
+              <input type="text" id="adm-course-id" required placeholder="e.g. CS2109" />
+            </div>
+            <div class="field">
+              <label for="adm-course-name">Course Name</label>
+              <input type="text" id="adm-course-name" required placeholder="e.g. Cloud Computing" />
+            </div>
+            <div class="field">
+              <label for="adm-course-fac">Assign Faculty</label>
+              <select id="adm-course-fac"></select>
+            </div>
+            <button type="submit" class="btn btn-primary">Create Course</button>
+          </form>
+
+          <hr class="divider" />
+
+          <form id="form-assign-faculty" class="form-stack">
+            <div class="field-inline-pair">
+              <div class="field">
+                <label for="adm-assign-course">Existing Course</label>
+                <select id="adm-assign-course"></select>
+              </div>
+              <div class="field">
+                <label for="adm-assign-fac">Reassign Faculty</label>
+                <select id="adm-assign-fac"></select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-outline">Update Faculty Assignment</button>
+          </form>
+        </div>
+
+        <!-- (c) Enroll Student in Course -->
+        <div class="card">
+          <h2 class="card-title">3. Enroll Student in Course</h2>
+          <form id="form-enroll-student" class="form-stack">
+            <div class="field">
+              <label for="adm-enroll-student">Select Student</label>
+              <select id="adm-enroll-student"></select>
+            </div>
+            <div class="field">
+              <label for="adm-enroll-course">Select Course</label>
+              <select id="adm-enroll-course"></select>
+            </div>
+            <button type="submit" class="btn btn-primary">Enroll Student</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Courses Summary Table -->
+      <div class="card">
+        <h2 class="card-title">Courses Overview</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Assigned Faculty</th>
+                <th class="num">Enrolled Students</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-admin-courses"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 3: Faculty Attendance Marking -->
+    <section id="view-faculty-mark" class="is-hidden" aria-label="Attendance Marking">
+      <div class="card mark-header-card">
+        <div class="mark-controls-grid">
+          <div class="field">
+            <label for="mark-dept">Department</label>
+            <select id="mark-dept">
+              <option value="CSE">CSE</option>
+              <option value="MEC">MEC</option>
+              <option value="ECE">ECE</option>
+              <option value="EEE">EEE</option>
+              <option value="BBA">BBA</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="mark-batch">Semester &amp; Batch</label>
+            <select id="mark-batch">
+              <option value="Sem 2-1 (25CSE03)">Sem 2-1 (25CSE03)</option>
+              <option value="Sem 2-1 (25CSE01)">Sem 2-1 (25CSE01)</option>
+              <option value="Sem 2-1 (25CSE02)">Sem 2-1 (25CSE02)</option>
+            </select>
+          </div>
+          <div class="field field-course">
+            <label for="mark-course">Course Code &amp; Title</label>
+            <select id="mark-course"></select>
+          </div>
+          <div class="field">
+            <label for="mark-date">Date</label>
+            <input type="date" id="mark-date" />
+          </div>
+          <div class="field">
+            <label for="mark-start-time">Scheduled Start Time</label>
+            <input type="time" id="mark-start-time" value="09:30" />
+          </div>
+        </div>
+
+        <div class="period-row">
+          <span class="row-label">Period:</span>
+          <div class="period-slots" id="mark-period-slots" role="group" aria-label="Class Period Slots">
+            <button type="button" class="slot-btn is-active" data-slot="Slot I" data-start="09:30">Slot I (09:30-10:30)</button>
+            <button type="button" class="slot-btn" data-slot="Slot II" data-start="10:30">Slot II (10:30-11:30)</button>
+            <button type="button" class="slot-btn" data-slot="Slot III" data-start="11:30">Slot III (11:30-12:30)</button>
+            <button type="button" class="slot-btn" data-slot="Slot IV" data-start="12:30">Slot IV (12:30-01:30)</button>
+            <button type="button" class="slot-btn" data-slot="Slot V" data-start="13:30">Slot V (01:30-02:30)</button>
+            <button type="button" class="slot-btn" data-slot="Slot VI" data-start="14:30">Slot VI (02:30-03:30)</button>
+            <button type="button" class="slot-btn" data-slot="Slot VII" data-start="15:30">Slot VII (03:30-04:30)</button>
+            <button type="button" class="slot-btn" data-slot="Slot VIII" data-start="16:30">Slot VIII (04:30-05:30)</button>
+          </div>
+        </div>
+
+        <div class="session-type-row">
+          <span id="mark-slot-label" class="slot-active-label">Slot I (1 Hour)</span>
+          <label class="radio-option"><input type="radio" name="session-type" value="Lecture" checked /> Lecture</label>
+          <label class="radio-option"><input type="radio" name="session-type" value="Tutorial" /> Tutorial</label>
+          <label class="radio-option"><input type="radio" name="session-type" value="Practical Lab" /> Practical Lab</label>
+        </div>
+
+        <div class="topic-row">
+          <label for="mark-topic" class="row-label">Topics Taught:</label>
+          <input type="text" id="mark-topic" maxlength="150" placeholder="Unit II: Component Architecture, Services and Data Tables" />
+          <span id="mark-topic-count" class="topic-count">0 / 150 chars</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title">Student Attendance</h2>
+
+        <div class="att-action-bar">
+          <div class="pill-counters" id="mark-summary">
+            <span class="cnt-pill cnt-pill-total">Total: <strong id="cnt-total">0</strong></span>
+            <span class="cnt-pill cnt-pill-present">Present: <strong id="cnt-present">0</strong></span>
+            <span class="cnt-pill cnt-pill-late">Late: <strong id="cnt-late">0</strong></span>
+            <span class="cnt-pill cnt-pill-absent">Absent: <strong id="cnt-absent">0</strong></span>
+          </div>
+          <div class="actions-row">
+            <button type="button" id="btn-all-present" class="btn btn-outline btn-sm">All Present</button>
+            <button type="button" id="btn-all-absent" class="btn btn-outline btn-sm">All Absent</button>
+            <button type="button" id="btn-submit-attendance" class="btn btn-primary btn-sm">Submit Attendance</button>
+          </div>
+        </div>
+
+        <p id="mark-note" class="note-text is-hidden">Attendance already exists for this date. Submitting will update it.</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th class="num">#</th>
+                <th>Roll Number</th>
+                <th>Student Name</th>
+                <th class="num">Cumulative %</th>
+                <th>Check-In Time</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-mark"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card" id="enrolled-students-card">
+        <div class="card-head-row">
+          <div class="enrolled-head-title">
+            <h2 class="card-title">Enrolled Students List</h2>
+            <span id="enrolled-course-badge" class="cnt-pill cnt-pill-total">0 Enrolled</span>
+          </div>
+          <div class="filter-controls no-print">
+            <input type="text" id="enrolled-search" placeholder="Search roll no., name, or dept..." aria-label="Search enrolled students" />
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th class="num">#</th>
+                <th>Roll Number</th>
+                <th>Student Name</th>
+                <th>Department</th>
+                <th>Sem / Sec</th>
+                <th>Email</th>
+                <th>Account</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-enrolled-students"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 4A: Faculty Reports & Analytics -->
+    <section id="view-faculty-report" class="is-hidden" aria-label="Faculty Attendance Reports">
+      <div class="heading-row">
+        <h1 class="page-heading">Attendance Reports &amp; Analytics</h1>
+        <div class="actions-row no-print">
+          <select id="report-course" aria-label="Select course for report"></select>
+          <button type="button" id="btn-faculty-csv" class="btn btn-outline">Export CSV</button>
+          <button type="button" id="btn-faculty-print" class="btn btn-primary">Download PDF</button>
+        </div>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-box">
+          <span class="stat-label">Classes Held</span>
+          <strong class="stat-value" id="frep-sessions">0</strong>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Enrolled Students</span>
+          <strong class="stat-value" id="frep-students">0</strong>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Class Average</span>
+          <strong class="stat-value" id="frep-avg">0%</strong>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Below 75% Cutoff</span>
+          <strong class="stat-value text-danger" id="frep-defaulters">0</strong>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title" id="report-chart-title">Student Attendance Percentage (%)</h2>
+        <div class="chart-box">
+          <canvas id="faculty-bar-chart"></canvas>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title">Student-Wise Attendance Summary</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Roll Number</th>
+                <th>Student Name</th>
+                <th class="num">Attended / Total</th>
+                <th class="num">Percentage</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-faculty-report"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 4B: Student My Attendance -->
+    <section id="view-student" class="is-hidden" aria-label="My Attendance">
+      <div class="heading-row">
+        <div>
+          <h1 class="page-heading">My Attendance</h1>
+          <p id="student-summary-line" class="subtitle-text"></p>
+        </div>
+        <div class="actions-row no-print">
+          <button type="button" id="btn-student-csv" class="btn btn-outline">Export CSV</button>
+          <button type="button" id="btn-student-print" class="btn btn-primary">Download PDF</button>
+        </div>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-box">
+          <span class="stat-label">Overall Attendance</span>
+          <strong class="stat-value" id="stu-stat-pct">0%</strong>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Classes Attended</span>
+          <strong class="stat-value" id="stu-stat-attended">0 / 0</strong>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Enrolled Courses</span>
+          <strong class="stat-value" id="stu-stat-courses">0</strong>
+        </div>
+        <div class="stat-box">
+          <span class="stat-label">Eligibility Standing</span>
+          <strong class="stat-value" id="stu-stat-standing">-</strong>
+        </div>
+      </div>
+
+      <div class="card week-card">
+        <div class="week-banner">Last Week Attendance %</div>
+        <div class="table-wrap week-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>S.No</th>
+                <th>Date</th>
+                <th>Held</th>
+                <th>Attend</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-student-lastweek"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head-row">
+          <h2 class="card-title">Day-Wise Attendance</h2>
+          <div class="filter-controls no-print">
+            <select id="stu-filter-course" aria-label="Filter by subject">
+              <option value="">All Subjects</option>
+            </select>
+            <input type="date" id="stu-filter-date" aria-label="Filter by date" />
+            <button type="button" id="btn-stu-clear-filters" class="btn btn-outline btn-sm">Reset</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th class="num">#</th>
+                <th>Date</th>
+                <th>Course</th>
+                <th class="num">Held</th>
+                <th class="num">Attended</th>
+                <th class="num">Late</th>
+                <th class="num">Daily %</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-student-daywise"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="card-title">Subject-Wise Breakdown</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Course Code &amp; Title</th>
+                <th>Faculty In-Charge</th>
+                <th>Type</th>
+                <th class="num">Held</th>
+                <th class="num">Attended</th>
+                <th class="num">Attendance %</th>
+                <th>Status</th>
+                <th>Deficit to 75%</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-student-report"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Simple status message banner -->
+  <div id="message-box" class="message-box is-hidden" role="status"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

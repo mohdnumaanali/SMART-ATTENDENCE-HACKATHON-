@@ -1,0 +1,6 @@
+{
+  "name": "SR University — Smart Attendance Tracker",
+  "description": "SR University Academic Portal for Smart Attendance Tracking: role-based Admin, Faculty, and Student portals with real-time 75% statutory analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

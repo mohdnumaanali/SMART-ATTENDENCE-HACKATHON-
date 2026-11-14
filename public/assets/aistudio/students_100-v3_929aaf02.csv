@@ -1,0 +1,101 @@
+_id,user,rollNumber,name,department,semester,section,isActive,createdAt,updatedAt,__v
+6af6c5dad3fcc64b83d0b45b,6af6c5dad3fcc64b83d0b45b,CS23001,Chitra Nair,Computer Science,5,A,True,2026-11-13T08:10:02.494Z,2026-11-13T08:10:02.494Z,0
+6af6c5dad3fcc64b83d0b45d,6af6c5dad3fcc64b83d0b45d,CS23002,Vihaan Iyer,Computer Science,5,A,True,2026-11-13T08:10:02.910Z,2026-11-13T08:10:02.910Z,0
+6af6c5dad3fcc64b83d0b45f,6af6c5dad3fcc64b83d0b45f,CS23003,Aarohi Agarwal,Computer Science,5,A,True,2026-11-13T08:10:03.326Z,2026-11-13T08:10:03.326Z,0
+6af6c5dad3fcc64b83d0b461,6af6c5dad3fcc64b83d0b461,CS23004,Rahul Reddy,Computer Science,5,A,True,2026-11-13T08:10:03.742Z,2026-11-13T08:10:03.742Z,0
+6af6c5dad3fcc64b83d0b463,6af6c5dad3fcc64b83d0b463,CS23005,Sakshi Joshi,Computer Science,5,A,True,2026-11-13T08:10:04.158Z,2026-11-13T08:10:04.158Z,0
+6af6c5dad3fcc64b83d0b465,6af6c5dad3fcc64b83d0b465,CS23006,Hema Iyer,Computer Science,5,A,True,2026-11-13T08:10:04.574Z,2026-11-13T08:10:04.574Z,0
+6af6c5dad3fcc64b83d0b467,6af6c5dad3fcc64b83d0b467,CS23007,Saurabh Mehta,Computer Science,5,A,True,2026-11-13T08:10:04.990Z,2026-11-13T08:10:04.990Z,0
+6af6c5dad3fcc64b83d0b469,6af6c5dad3fcc64b83d0b469,CS23008,Pankaj Mishra,Computer Science,5,A,True,2026-11-13T08:10:05.406Z,2026-11-13T08:10:05.406Z,0
+6af6c5dad3fcc64b83d0b46b,6af6c5dad3fcc64b83d0b46b,CS23009,Arjun Verma,Computer Science,5,A,True,2026-11-13T08:10:05.822Z,2026-11-13T08:10:05.822Z,0
+6af6c5dad3fcc64b83d0b46d,6af6c5dad3fcc64b83d0b46d,CS23010,Atharva Kulkarni,Computer Science,5,A,True,2026-11-13T08:10:06.238Z,2026-11-13T08:10:06.238Z,0
+6af6c5dad3fcc64b83d0b46f,6af6c5dad3fcc64b83d0b46f,CS23011,Harshit Shukla,Computer Science,5,A,True,2026-11-13T08:10:06.654Z,2026-11-13T08:10:06.654Z,0
+6af6c5dad3fcc64b83d0b471,6af6c5dad3fcc64b83d0b471,CS23012,Suraj Verma,Computer Science,5,A,True,2026-11-13T08:10:07.070Z,2026-11-13T08:10:07.070Z,0
+6af6c5dad3fcc64b83d0b473,6af6c5dad3fcc64b83d0b473,CS23013,Vikram Desai,Computer Science,5,A,True,2026-11-13T08:10:07.486Z,2026-11-13T08:10:07.486Z,0
+6af6c5dad3fcc64b83d0b475,6af6c5dad3fcc64b83d0b475,CS23014,Nikita Banerjee,Computer Science,5,A,True,2026-11-13T08:10:07.902Z,2026-11-13T08:10:07.902Z,0
+6af6c5dad3fcc64b83d0b477,6af6c5dad3fcc64b83d0b477,CS23015,Lata Chaudhary,Computer Science,5,A,True,2026-11-13T08:10:08.318Z,2026-11-13T08:10:08.318Z,0
+6af6c5dad3fcc64b83d0b479,6af6c5dad3fcc64b83d0b479,CS23016,Divya Jain,Computer Science,5,A,True,2026-11-13T08:10:08.734Z,2026-11-13T08:10:08.734Z,0
+6af6c5dad3fcc64b83d0b47b,6af6c5dad3fcc64b83d0b47b,CS23017,Aditi Das,Computer Science,5,A,True,2026-11-13T08:10:09.150Z,2026-11-13T08:10:09.150Z,0
+6af6c5dad3fcc64b83d0b47d,6af6c5dad3fcc64b83d0b47d,CS23018,Aarohi Sharma,Computer Science,5,A,True,2026-11-13T08:10:09.566Z,2026-11-13T08:10:09.566Z,0
+6af6c5dad3fcc64b83d0b47f,6af6c5dad3fcc64b83d0b47f,CS23019,Vandana Patel,Computer Science,5,A,True,2026-11-13T08:10:09.982Z,2026-11-13T08:10:09.982Z,0
+6af6c5dad3fcc64b83d0b481,6af6c5dad3fcc64b83d0b481,CS23020,Lata Mishra,Computer Science,5,A,True,2026-11-13T08:10:10.398Z,2026-11-13T08:10:10.398Z,0
+6af6c5dad3fcc64b83d0b483,6af6c5dad3fcc64b83d0b483,CS23021,Anvi Bansal,Computer Science,5,A,True,2026-11-13T08:10:10.814Z,2026-11-13T08:10:10.814Z,0
+6af6c5dad3fcc64b83d0b485,6af6c5dad3fcc64b83d0b485,CS23022,Aarush Kulkarni,Computer Science,5,A,True,2026-11-13T08:10:11.230Z,2026-11-13T08:10:11.230Z,0
+6af6c5dad3fcc64b83d0b487,6af6c5dad3fcc64b83d0b487,CS23023,Vandana Chopra,Computer Science,5,A,True,2026-11-13T08:10:11.646Z,2026-11-13T08:10:11.646Z,0
+6af6c5dad3fcc64b83d0b489,6af6c5dad3fcc64b83d0b489,CS23024,Pranav Mehta,Computer Science,5,A,True,2026-11-13T08:10:12.062Z,2026-11-13T08:10:12.062Z,0
+6af6c5dad3fcc64b83d0b48b,6af6c5dad3fcc64b83d0b48b,CS23025,Sneha Joshi,Computer Science,5,A,False,2026-11-13T08:10:12.478Z,2026-11-13T08:10:12.478Z,0
+6af6c5dad3fcc64b83d0b48d,6af6c5dad3fcc64b83d0b48d,EC23001,Shreya Sethi,Electronics and Communication,1,A,True,2026-11-13T08:10:12.894Z,2026-11-13T08:10:12.894Z,0
+6af6c5dad3fcc64b83d0b48f,6af6c5dad3fcc64b83d0b48f,EC23002,Suraj Singhal,Electronics and Communication,5,C,True,2026-11-13T08:10:13.310Z,2026-11-13T08:10:13.310Z,0
+6af6c5dad3fcc64b83d0b491,6af6c5dad3fcc64b83d0b491,CS23026,Sai Pillai,Computer Science,7,C,True,2026-11-13T08:10:13.726Z,2026-11-13T08:10:13.726Z,0
+6af6c5dad3fcc64b83d0b493,6af6c5dad3fcc64b83d0b493,ME23001,Varun Chaudhary,Mechanical Engineering,1,C,True,2026-11-13T08:10:14.142Z,2026-11-13T08:10:14.142Z,0
+6af6c5dad3fcc64b83d0b495,6af6c5dad3fcc64b83d0b495,EE23001,Aryan Tandon,Electrical Engineering,5,C,True,2026-11-13T08:10:14.558Z,2026-11-13T08:10:14.558Z,0
+6af6c5dad3fcc64b83d0b497,6af6c5dad3fcc64b83d0b497,CS23027,Shaurya Singh,Computer Science,1,C,True,2026-11-13T08:10:14.974Z,2026-11-13T08:10:14.974Z,0
+6af6c5dad3fcc64b83d0b499,6af6c5dad3fcc64b83d0b499,EC23003,Navya Ghosh,Electronics and Communication,1,A,True,2026-11-13T08:10:15.390Z,2026-11-13T08:10:15.390Z,0
+6af6c5dad3fcc64b83d0b49b,6af6c5dad3fcc64b83d0b49b,ME23002,Prashanth Arora,Mechanical Engineering,5,B,True,2026-11-13T08:10:15.806Z,2026-11-13T08:10:15.806Z,0
+6af6c5dad3fcc64b83d0b49d,6af6c5dad3fcc64b83d0b49d,EC23004,Ankit Desai,Electronics and Communication,3,B,True,2026-11-13T08:10:16.222Z,2026-11-13T08:10:16.222Z,0
+6af6c5dad3fcc64b83d0b49f,6af6c5dad3fcc64b83d0b49f,EC23005,Madhu Bhatia,Electronics and Communication,1,C,True,2026-11-13T08:10:16.638Z,2026-11-13T08:10:16.638Z,0
+6af6c5dad3fcc64b83d0b4a1,6af6c5dad3fcc64b83d0b4a1,EE23002,Sai Chatterjee,Electrical Engineering,3,A,True,2026-11-13T08:10:17.054Z,2026-11-13T08:10:17.054Z,0
+6af6c5dad3fcc64b83d0b4a3,6af6c5dad3fcc64b83d0b4a3,EC23006,Harshit Subramanian,Electronics and Communication,3,C,True,2026-11-13T08:10:17.470Z,2026-11-13T08:10:17.470Z,0
+6af6c5dad3fcc64b83d0b4a5,6af6c5dad3fcc64b83d0b4a5,CS23028,Navya Mehta,Computer Science,3,A,True,2026-11-13T08:10:17.886Z,2026-11-13T08:10:17.886Z,0
+6af6c5dad3fcc64b83d0b4a7,6af6c5dad3fcc64b83d0b4a7,ME23003,Harshit Joshi,Mechanical Engineering,5,A,True,2026-11-13T08:10:18.302Z,2026-11-13T08:10:18.302Z,0
+6af6c5dad3fcc64b83d0b4a9,6af6c5dad3fcc64b83d0b4a9,EE23003,Sneha Bansal,Electrical Engineering,5,A,True,2026-11-13T08:10:18.718Z,2026-11-13T08:10:18.718Z,0
+6af6c5dad3fcc64b83d0b4ab,6af6c5dad3fcc64b83d0b4ab,ME23004,Varun Ghosh,Mechanical Engineering,7,A,True,2026-11-13T08:10:19.134Z,2026-11-13T08:10:19.134Z,0
+6af6c5dad3fcc64b83d0b4ad,6af6c5dad3fcc64b83d0b4ad,IT23001,Pooja Patel,Information Technology,5,C,True,2026-11-13T08:10:19.550Z,2026-11-13T08:10:19.550Z,0
+6af6c5dad3fcc64b83d0b4af,6af6c5dad3fcc64b83d0b4af,EE23004,Neha Sethi,Electrical Engineering,7,B,True,2026-11-13T08:10:19.966Z,2026-11-13T08:10:19.966Z,0
+6af6c5dad3fcc64b83d0b4b1,6af6c5dad3fcc64b83d0b4b1,IT23002,Nikhil Chatterjee,Information Technology,7,A,True,2026-11-13T08:10:20.382Z,2026-11-13T08:10:20.382Z,0
+6af6c5dad3fcc64b83d0b4b3,6af6c5dad3fcc64b83d0b4b3,CS23029,Saanvi Roy,Computer Science,3,C,True,2026-11-13T08:10:20.798Z,2026-11-13T08:10:20.798Z,0
+6af6c5dad3fcc64b83d0b4b5,6af6c5dad3fcc64b83d0b4b5,ME23005,Jyoti Banerjee,Mechanical Engineering,1,B,True,2026-11-13T08:10:21.214Z,2026-11-13T08:10:21.214Z,0
+6af6c5dad3fcc64b83d0b4b7,6af6c5dad3fcc64b83d0b4b7,ME23006,Ishaan Bose,Mechanical Engineering,5,C,True,2026-11-13T08:10:21.630Z,2026-11-13T08:10:21.630Z,0
+6af6c5dad3fcc64b83d0b4b9,6af6c5dad3fcc64b83d0b4b9,CS23030,Chitra Patel,Computer Science,1,C,True,2026-11-13T08:10:22.046Z,2026-11-13T08:10:22.046Z,0
+6af6c5dad3fcc64b83d0b4bb,6af6c5dad3fcc64b83d0b4bb,EC23007,Kunal Pillai,Electronics and Communication,5,A,True,2026-11-13T08:10:22.462Z,2026-11-13T08:10:22.462Z,0
+6af6c5dad3fcc64b83d0b4bd,6af6c5dad3fcc64b83d0b4bd,IT23003,Diya Patel,Information Technology,7,A,False,2026-11-13T08:10:22.878Z,2026-11-13T08:10:22.878Z,0
+6af6c5dad3fcc64b83d0b4bf,6af6c5dad3fcc64b83d0b4bf,EC23008,Manish Tandon,Electronics and Communication,3,C,True,2026-11-13T08:10:23.294Z,2026-11-13T08:10:23.294Z,0
+6af6c5dad3fcc64b83d0b4c1,6af6c5dad3fcc64b83d0b4c1,EC23009,Saanvi Ghosh,Electronics and Communication,3,A,True,2026-11-13T08:10:23.710Z,2026-11-13T08:10:23.710Z,0
+6af6c5dad3fcc64b83d0b4c3,6af6c5dad3fcc64b83d0b4c3,IT23004,Komal Singh,Information Technology,1,C,True,2026-11-13T08:10:24.126Z,2026-11-13T08:10:24.126Z,0
+6af6c5dad3fcc64b83d0b4c5,6af6c5dad3fcc64b83d0b4c5,CS23031,Rahul Mukherjee,Computer Science,1,B,True,2026-11-13T08:10:24.542Z,2026-11-13T08:10:24.542Z,0
+6af6c5dad3fcc64b83d0b4c7,6af6c5dad3fcc64b83d0b4c7,EC23010,Riya Subramanian,Electronics and Communication,3,A,True,2026-11-13T08:10:24.958Z,2026-11-13T08:10:24.958Z,0
+6af6c5dad3fcc64b83d0b4c9,6af6c5dad3fcc64b83d0b4c9,EE23005,Zoya Malhotra,Electrical Engineering,1,A,True,2026-11-13T08:10:25.374Z,2026-11-13T08:10:25.374Z,0
+6af6c5dad3fcc64b83d0b4cb,6af6c5dad3fcc64b83d0b4cb,CS23032,Harshit Gupta,Computer Science,3,A,True,2026-11-13T08:10:25.790Z,2026-11-13T08:10:25.790Z,0
+6af6c5dad3fcc64b83d0b4cd,6af6c5dad3fcc64b83d0b4cd,EE23006,Kavya Saxena,Electrical Engineering,3,B,True,2026-11-13T08:10:26.206Z,2026-11-13T08:10:26.206Z,0
+6af6c5dad3fcc64b83d0b4cf,6af6c5dad3fcc64b83d0b4cf,EE23007,Saanvi Bhatia,Electrical Engineering,7,A,True,2026-11-13T08:10:26.622Z,2026-11-13T08:10:26.622Z,0
+6af6c5dad3fcc64b83d0b4d1,6af6c5dad3fcc64b83d0b4d1,IT23005,Siddharth Kumar,Information Technology,5,B,False,2026-11-13T08:10:27.038Z,2026-11-13T08:10:27.038Z,0
+6af6c5dad3fcc64b83d0b4d3,6af6c5dad3fcc64b83d0b4d3,EC23011,Nikita Khanna,Electronics and Communication,7,C,True,2026-11-13T08:10:27.454Z,2026-11-13T08:10:27.454Z,0
+6af6c5dad3fcc64b83d0b4d5,6af6c5dad3fcc64b83d0b4d5,IT23006,Siddharth Banerjee,Information Technology,3,A,True,2026-11-13T08:10:27.870Z,2026-11-13T08:10:27.870Z,0
+6af6c5dad3fcc64b83d0b4d7,6af6c5dad3fcc64b83d0b4d7,EE23008,Dev Saxena,Electrical Engineering,3,C,True,2026-11-13T08:10:28.286Z,2026-11-13T08:10:28.286Z,0
+6af6c5dad3fcc64b83d0b4d9,6af6c5dad3fcc64b83d0b4d9,CS23033,Deepika Tiwari,Computer Science,1,A,True,2026-11-13T08:10:28.702Z,2026-11-13T08:10:28.702Z,0
+6af6c5dad3fcc64b83d0b4db,6af6c5dad3fcc64b83d0b4db,CS23034,Ritvik Singhal,Computer Science,5,A,True,2026-11-13T08:10:29.118Z,2026-11-13T08:10:29.118Z,0
+6af6c5dad3fcc64b83d0b4dd,6af6c5dad3fcc64b83d0b4dd,EC23012,Kabir Agarwal,Electronics and Communication,7,A,True,2026-11-13T08:10:29.534Z,2026-11-13T08:10:29.534Z,0
+6af6c5dad3fcc64b83d0b4df,6af6c5dad3fcc64b83d0b4df,EE23009,Tanya Singh,Electrical Engineering,7,A,True,2026-11-13T08:10:29.950Z,2026-11-13T08:10:29.950Z,0
+6af6c5dad3fcc64b83d0b4e1,6af6c5dad3fcc64b83d0b4e1,ME23007,Kunal Singhal,Mechanical Engineering,3,A,True,2026-11-13T08:10:30.366Z,2026-11-13T08:10:30.366Z,0
+6af6c5dad3fcc64b83d0b4e3,6af6c5dad3fcc64b83d0b4e3,ME23008,Tanya Das,Mechanical Engineering,5,B,True,2026-11-13T08:10:30.782Z,2026-11-13T08:10:30.782Z,0
+6af6c5dad3fcc64b83d0b4e5,6af6c5dad3fcc64b83d0b4e5,CS23035,Swati Das,Computer Science,1,A,True,2026-11-13T08:10:31.198Z,2026-11-13T08:10:31.198Z,0
+6af6c5dad3fcc64b83d0b4e7,6af6c5dad3fcc64b83d0b4e7,EC23013,Meera Arora,Electronics and Communication,1,A,True,2026-11-13T08:10:31.614Z,2026-11-13T08:10:31.614Z,0
+6af6c5dad3fcc64b83d0b4e9,6af6c5dad3fcc64b83d0b4e9,EE23010,Tushar Chaturvedi,Electrical Engineering,7,A,True,2026-11-13T08:10:32.030Z,2026-11-13T08:10:32.030Z,0
+6af6c5dad3fcc64b83d0b4eb,6af6c5dad3fcc64b83d0b4eb,EC23014,Atharva Iyengar,Electronics and Communication,7,A,True,2026-11-13T08:10:32.446Z,2026-11-13T08:10:32.446Z,0
+6af6c5dad3fcc64b83d0b4ed,6af6c5dad3fcc64b83d0b4ed,CS23036,Reyansh Nair,Computer Science,7,C,True,2026-11-13T08:10:32.862Z,2026-11-13T08:10:32.862Z,0
+6af6c5dad3fcc64b83d0b4ef,6af6c5dad3fcc64b83d0b4ef,EE23011,Aarush Ghosh,Electrical Engineering,1,A,True,2026-11-13T08:10:33.278Z,2026-11-13T08:10:33.278Z,0
+6af6c5dad3fcc64b83d0b4f1,6af6c5dad3fcc64b83d0b4f1,IT23007,Kian Mukherjee,Information Technology,3,B,True,2026-11-13T08:10:33.694Z,2026-11-13T08:10:33.694Z,0
+6af6c5dad3fcc64b83d0b4f3,6af6c5dad3fcc64b83d0b4f3,IT23008,Swati Bose,Information Technology,7,A,True,2026-11-13T08:10:34.110Z,2026-11-13T08:10:34.110Z,0
+6af6c5dad3fcc64b83d0b4f5,6af6c5dad3fcc64b83d0b4f5,CS23037,Krishna Tandon,Computer Science,7,B,True,2026-11-13T08:10:34.526Z,2026-11-13T08:10:34.526Z,0
+6af6c5dad3fcc64b83d0b4f7,6af6c5dad3fcc64b83d0b4f7,ME23009,Sneha Bose,Mechanical Engineering,5,B,True,2026-11-13T08:10:34.942Z,2026-11-13T08:10:34.942Z,0
+6af6c5dad3fcc64b83d0b4f9,6af6c5dad3fcc64b83d0b4f9,EE23012,Manish Yadav,Electrical Engineering,7,A,True,2026-11-13T08:10:35.358Z,2026-11-13T08:10:35.358Z,0
+6af6c5dad3fcc64b83d0b4fb,6af6c5dad3fcc64b83d0b4fb,IT23009,Myra Singh,Information Technology,1,C,True,2026-11-13T08:10:35.774Z,2026-11-13T08:10:35.774Z,0
+6af6c5dad3fcc64b83d0b4fd,6af6c5dad3fcc64b83d0b4fd,CS23038,Vivaan Mukherjee,Computer Science,5,A,True,2026-11-13T08:10:36.190Z,2026-11-13T08:10:36.190Z,0
+6af6c5dad3fcc64b83d0b4ff,6af6c5dad3fcc64b83d0b4ff,ME23010,Pallavi Nair,Mechanical Engineering,3,A,False,2026-11-13T08:10:36.606Z,2026-11-13T08:10:36.606Z,0
+6af6c5dad3fcc64b83d0b501,6af6c5dad3fcc64b83d0b501,CS23039,Jyoti Chaudhary,Computer Science,3,A,True,2026-11-13T08:10:37.022Z,2026-11-13T08:10:37.022Z,0
+6af6c5dad3fcc64b83d0b503,6af6c5dad3fcc64b83d0b503,IT23010,Uma Bansal,Information Technology,7,A,True,2026-11-13T08:10:37.438Z,2026-11-13T08:10:37.438Z,0
+6af6c5dad3fcc64b83d0b505,6af6c5dad3fcc64b83d0b505,EE23013,Yamini Banerjee,Electrical Engineering,3,C,True,2026-11-13T08:10:37.854Z,2026-11-13T08:10:37.854Z,0
+6af6c5dad3fcc64b83d0b507,6af6c5dad3fcc64b83d0b507,EE23014,Anvi Nair,Electrical Engineering,1,B,True,2026-11-13T08:10:38.270Z,2026-11-13T08:10:38.270Z,0
+6af6c5dad3fcc64b83d0b509,6af6c5dad3fcc64b83d0b509,EE23015,Navya Mishra,Electrical Engineering,5,B,True,2026-11-13T08:10:38.686Z,2026-11-13T08:10:38.686Z,0
+6af6c5dad3fcc64b83d0b50b,6af6c5dad3fcc64b83d0b50b,EC23015,Kian Tiwari,Electronics and Communication,3,B,True,2026-11-13T08:10:39.102Z,2026-11-13T08:10:39.102Z,0
+6af6c5dad3fcc64b83d0b50d,6af6c5dad3fcc64b83d0b50d,EC23016,Aarav Pillai,Electronics and Communication,7,B,True,2026-11-13T08:10:39.518Z,2026-11-13T08:10:39.518Z,0
+6af6c5dad3fcc64b83d0b50f,6af6c5dad3fcc64b83d0b50f,CS23040,Pallavi Singhal,Computer Science,1,B,True,2026-11-13T08:10:39.934Z,2026-11-13T08:10:39.934Z,0
+6af6c5dad3fcc64b83d0b511,6af6c5dad3fcc64b83d0b511,EE23016,Lakshay Iyengar,Electrical Engineering,1,A,True,2026-11-13T08:10:40.350Z,2026-11-13T08:10:40.350Z,0
+6af6c5dad3fcc64b83d0b513,6af6c5dad3fcc64b83d0b513,EE23017,Veer Shukla,Electrical Engineering,5,A,True,2026-11-13T08:10:40.766Z,2026-11-13T08:10:40.766Z,0
+6af6c5dad3fcc64b83d0b515,6af6c5dad3fcc64b83d0b515,CS23041,Pranav Ghosh,Computer Science,3,B,True,2026-11-13T08:10:41.182Z,2026-11-13T08:10:41.182Z,0
+6af6c5dad3fcc64b83d0b517,6af6c5dad3fcc64b83d0b517,ME23011,Angel Ghosh,Mechanical Engineering,5,C,False,2026-11-13T08:10:41.598Z,2026-11-13T08:10:41.598Z,0
+6af6c5dad3fcc64b83d0b519,6af6c5dad3fcc64b83d0b519,EE23018,Lakshay Bose,Electrical Engineering,1,C,True,2026-11-13T08:10:42.014Z,2026-11-13T08:10:42.014Z,0
+6af6c5dad3fcc64b83d0b51b,6af6c5dad3fcc64b83d0b51b,EC23017,Karthik Rao,Electronics and Communication,1,A,True,2026-11-13T08:10:42.430Z,2026-11-13T08:10:42.430Z,0
+6af6c5dad3fcc64b83d0b51d,6af6c5dad3fcc64b83d0b51d,CS23042,Neha Iyengar,Computer Science,3,B,True,2026-11-13T08:10:42.846Z,2026-11-13T08:10:42.846Z,0
+6af6c5dad3fcc64b83d0b51f,6af6c5dad3fcc64b83d0b51f,IT23011,Kian Chaudhary,Information Technology,5,A,True,2026-11-13T08:10:43.262Z,2026-11-13T08:10:43.262Z,0
+6af6c5dad3fcc64b83d0b521,6af6c5dad3fcc64b83d0b521,EC23018,Zoya Yadav,Electronics and Communication,7,B,True,2026-11-13T08:10:43.678Z,2026-11-13T08:10:43.678Z,0
