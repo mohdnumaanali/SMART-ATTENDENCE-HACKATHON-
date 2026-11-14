@@ -1,8 +1,6 @@
 'use strict';
 
 require('dotenv').config();
-const fs = require('fs');
-const path = require('path');
 const bcrypt = require('bcryptjs');
 const mongoose = require('mongoose');
 const User = require('./models/User');
@@ -10,35 +8,27 @@ const Course = require('./models/Course');
 const Enrollment = require('./models/Enrollment');
 const Attendance = require('./models/Attendance');
 
-const STUDENTS_CSV_PATH = path.resolve(
-  __dirname,
-  '..',
-  'public',
-  'assets',
-  'aistudio',
-  'students_100-v3_929aaf02.csv'
-);
-
 function loadStudentsFromCsv() {
-  const raw = fs.readFileSync(STUDENTS_CSV_PATH, 'utf8').trim();
-  const lines = raw.split(/\r?\n/).slice(1);
-  return lines
-    .map((line) => line.trim())
-    .filter(Boolean)
-    .map((line) => {
-      const cols = line.split(',');
-      return {
-        rollNumber: String(cols[2] || '').trim().toUpperCase(),
-        name: String(cols[3] || '').trim(),
-        department: String(cols[4] || '').trim(),
-        semester: Number(cols[5]) || null,
-        section: String(cols[6] || '').trim(),
-        isActive: String(cols[7] || '').trim().toLowerCase() !== 'false',
-      };
-    });
+  return [
+    { rollNumber: 'SRU2024001', name: 'Rohan Verma', department: 'Computer Science', semester: 3, section: 'A', isActive: true },
+    { rollNumber: 'SRU2024002', name: 'Aakash Reddy', department: 'Computer Science', semester: 3, section: 'A', isActive: true },
+    { rollNumber: 'SRU2024003', name: 'Ananya Sharma', department: 'Computer Science', semester: 3, section: 'A', isActive: true },
+    { rollNumber: 'SRU2024004', name: 'Bhavani Prasad', department: 'Computer Science', semester: 3, section: 'A', isActive: true },
+    { rollNumber: 'SRU2024005', name: 'Chaitanya Kumar', department: 'Computer Science', semester: 3, section: 'A', isActive: true },
+    { rollNumber: 'SRU2024006', name: 'Divya Sri', department: 'Information Technology', semester: 3, section: 'A', isActive: true },
+    { rollNumber: 'SRU2024007', name: 'Eswar Teja', department: 'Information Technology', semester: 3, section: 'A', isActive: true },
+    { rollNumber: 'SRU2024008', name: 'Harika Goud', department: 'Information Technology', semester: 3, section: 'A', isActive: true },
+    { rollNumber: 'SRU2024009', name: 'Jayanth Varma', department: 'Electronics and Communication', semester: 3, section: 'B', isActive: true },
+    { rollNumber: 'SRU2024010', name: 'Karthik Sai', department: 'Electronics and Communication', semester: 3, section: 'B', isActive: true },
+    { rollNumber: 'SRU2024011', name: 'Keerthi Rao', department: 'Electronics and Communication', semester: 3, section: 'B', isActive: true },
+    { rollNumber: 'SRU2024012', name: 'Likhitha Reddy', department: 'Electrical Engineering', semester: 3, section: 'B', isActive: true },
+    { rollNumber: 'SRU2024013', name: 'Manoj Kumar', department: 'Electrical Engineering', semester: 3, section: 'B', isActive: true },
+    { rollNumber: 'SRU2024014', name: 'Meghana Pillai', department: 'Computer Science', semester: 3, section: 'A', isActive: true },
+    { rollNumber: 'SRU2024015', name: 'Nikhil Chowdary', department: 'Computer Science', semester: 3, section: 'A', isActive: true },
+  ];
 }
 
-// Build deterministic sample data: 1 Admin, 2 Faculty, 100 Students from CSV, 7 Courses
+// Build deterministic sample data: 1 Admin, 2 Faculty, 15 Students, 10 Courses
 function buildSeedData() {
   const passwordHash = bcrypt.hashSync('Password@123', 10);
 
@@ -113,8 +103,6 @@ function buildSeedData() {
     { courseId: 'MC2101', courseName: 'Environmental Science & Sustainability', facultyId: 'FAC002' },
   ];
 
-  // Course-specific enrollments so each course loads only its enrolled students:
-  // CS students take all 10 subjects; IT/EC/EE/ME students take their core + institute subjects.
   const deptAllowedByCourse = {
     CS2101: new Set(['Computer Science', 'Information Technology']),
     CS2102: new Set(['Computer Science', 'Information Technology']),
@@ -123,9 +111,9 @@ function buildSeedData() {
     CS2105: new Set(['Computer Science', 'Electronics and Communication']),
     CS2106: new Set(['Computer Science', 'Electrical Engineering']),
     CS2107: new Set(['Computer Science', 'Electrical Engineering']),
-    CS2108: null, // All departments
-    HS2101: null, // All departments
-    MC2101: null, // All departments
+    CS2108: null,
+    HS2101: null,
+    MC2101: null,
   };
 
   const enrollments = [];
@@ -138,7 +126,6 @@ function buildSeedData() {
     }
   }
 
-  // Simple deterministic pseudo-random generator for repeatable sample history
   let seed = 20261114;
   const nextRand = () => {
     seed = (seed * 1664525 + 1013904223) % 4294967296;
@@ -157,7 +144,6 @@ function buildSeedData() {
     const dateStr = dt.toISOString().slice(0, 10);
 
     courses.forEach((course, idx) => {
-      // Conduct each subject ~3-4 weekdays per week
       if ((day + idx) % 3 === 0) return;
       const enrolled = enrollments.filter((e) => e.courseId === course.courseId);
       for (const enr of enrolled) {
